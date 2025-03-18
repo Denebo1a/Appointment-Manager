@@ -1,0 +1,11 @@
+release/appointinfo.o
+release/appointmanagerdlg.o
+release/main.o
+release/mainwindow.o
+release/opmanagerdlg.o
+release/outpatientinfo.o
+release/timeduration.o
+release/qrc_rsc.o
+release/moc_appointmanagerdlg.o
+release/moc_mainwindow.o
+release/moc_opmanagerdlg.o

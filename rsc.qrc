@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>icon/add.png</file>
+        <file>icon/admin.png</file>
+        <file>icon/date.png</file>
+        <file>icon/delete.png</file>
+        <file>icon/edit.png</file>
+        <file>icon/filter.png</file>
+        <file>icon/info.png</file>
+        <file>icon/queue.png</file>
+        <file>icon/search.png</file>
+        <file>icon/windowIcon.png</file>
+        <file>icon/ui.png</file>
+        <file>icon/btn_background.png</file>
+        <file>icon/btn_background_disabled.png</file>
+        <file>icon/btn_background_hover.png</file>
+        <file>icon/btn_background_pressed.png</file>
+        <file>icon/ui_dlg.png</file>
+        <file>icon/ui_dlg_OP.png</file>
+    </qresource>
+</RCC>

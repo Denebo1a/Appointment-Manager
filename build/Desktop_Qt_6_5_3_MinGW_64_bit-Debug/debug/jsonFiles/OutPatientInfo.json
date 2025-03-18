@@ -1,0 +1,22 @@
+[
+    {
+        "ID": "002",
+        "address": "3F204诊室",
+        "appointments": [
+            {
+                "age": 70,
+                "date": "2024/09/10",
+                "gender": "男",
+                "name": "赵六",
+                "phoneNumber": "12345678904",
+                "time": "14:00-16:00"
+            }
+        ],
+        "capacity": 30,
+        "date": "2024/09/10",
+        "name": "内科",
+        "number": "002",
+        "phoneNumber": "5787991",
+        "time": "14:00-16:00"
+    }
+]

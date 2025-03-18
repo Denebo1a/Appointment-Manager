@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OPManagerDlg</class>
+ <widget class="QDialog" name="OPManagerDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#OPManagerDlg
+{
+	background-image: url(:/image/icon/ui_dlg_OP.png);
+
+	min-width: 600px;
+	max-width: 600px;
+	
+	min-height: 450px;
+	max-height: 450px;
+}
+
+QLineEdit
+{
+	font-size: 14px;         
+	font: &quot;Microsoft YaHei UI&quot;;
+	font-weight: bold;
+	color: #3dcce1;
+
+	padding: 1px;
+	border-style: solid;
+	border: 1px solid #3dcce1;
+	border-radius: 5px;
+
+	min-width:150px;  
+}
+
+QPushButton
+{
+	font-size: 16px;         
+	font: &quot;Microsoft YaHei UI&quot;;
+	font-weight: bold;
+	color: #3dcce1;
+
+
+	border: none;
+	border-radius: 15px;
+	
+	min-height: 50px;
+	max-height: 50px;
+
+	min-width: 130px;
+	max-width: 130px;
+
+	background-image: url(:/image/icon/btn_background.png)
+}
+
+QPushButton:disabled
+{
+	background-image: url(:/image/icon/btn_background_disabled.png);
+}
+
+QPushButton:hover
+{
+	background-image: url(:/image/icon/btn_background_hover.png)
+}
+
+QPushButton:pressed
+{
+	background-image: url(:/image/icon/btn_background_pressed.png)
+}</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>360</y>
+     <width>269</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_Ok">
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_Cancel">
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>50</y>
+     <width>381</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="lb_1">
+        <property name="styleSheet">
+         <string notr="true">#lb_1
+{
+	min-width: 70px;
+	max-width: 70px;
+
+	min-height: 25px;
+	max-height: 25px;
+}</string>
+        </property>
+        <property name="text">
+         <string>门诊号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_Number_OP">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="lb_2">
+        <property name="styleSheet">
+         <string notr="true">#lb_2
+{
+	min-width: 70px;
+	max-width: 70px;
+
+	min-height: 25px;
+	max-height: 25px;
+}</string>
+        </property>
+        <property name="text">
+         <string>门诊名称</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_Name_OP"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="lb_3">
+        <property name="styleSheet">
+         <string notr="true">#lb_3
+{
+	min-width: 70px;
+	max-width: 70px;
+
+	min-height: 25px;
+	max-height: 25px;
+}</string>
+        </property>
+        <property name="text">
+         <string>医生工号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_ID_OP"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="lb_4">
+        <property name="styleSheet">
+         <string notr="true">#lb_4
+{
+	min-width: 70px;
+	max-width: 70px;
+
+	min-height: 25px;
+	max-height: 25px;
+}</string>
+        </property>
+        <property name="text">
+         <string>接诊时间</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="de_Date_OP">
+        <property name="styleSheet">
+         <string notr="true">#de_Date_OP
+{
+  font: &quot;Microsoft YaHei UI&quot;;
+  font-size:14px;
+  font-weight: bold;
+  color: #3dcce1;
+
+  padding: 1px 15px 1px 3px;
+  border:1px solid #3dcce1;
+  border-radius:5px 5px 0px 0px;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comb_Duration_OP">
+        <property name="styleSheet">
+         <string notr="true">#comb_Duration_OP
+{
+	font: &quot;Microsoft YaHei UI&quot;;
+	font-size: 14px;
+	font-weight: bold;
+    color: #3dcce1;
+
+	padding: 1px 15px 1px 3px;
+	border:1px solid #3dcce1;
+	border-radius:5px 5px 0px 0px;
+}
+
+#comb_Duration_OP QAbstractItemView
+{
+	outline: none;
+	border:3px solid #3dcce1;
+}
+
+#comb_Duration_OP QAbstractItemView::item
+{
+	color: #3dcce1;
+}
+
+#comb_Duration_OP QAbstractItemView::item::hover
+{
+	color: #FFFFFF;
+	background-color: #3dcce1;
+}
+
+#comb_Duration_OP QAbstractItemView::item::selected
+{
+	color: #FFFFFF;
+	background-color: #3dcce1;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="lb_5">
+        <property name="styleSheet">
+         <string notr="true">#lb_5
+{
+	min-width: 70px;
+	max-width: 70px;
+
+	min-height: 25px;
+	max-height: 25px;
+}</string>
+        </property>
+        <property name="text">
+         <string>容量</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spb_Capacity_OP">
+        <property name="styleSheet">
+         <string notr="true">#spb_Capacity_OP
+{
+  font: &quot;Microsoft YaHei UI&quot;;
+  font-size:14px;
+  font-weight: bold;
+  color: #3dcce1;
+
+  padding: 1px 15px 1px 3px;
+  border:1px solid #3dcce1;
+  border-radius:5px 5px 0px 0px;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QLabel" name="lb_6">
+        <property name="styleSheet">
+         <string notr="true">#lb_6
+{
+	min-width: 70px;
+	max-width: 70px;
+
+	min-height: 25px;
+	max-height: 25px;
+}</string>
+        </property>
+        <property name="text">
+         <string>门诊地址</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_Address_OP"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QLabel" name="lb_7">
+        <property name="styleSheet">
+         <string notr="true">#lb_7
+{
+	min-width: 70px;
+	max-width: 70px;
+
+	min-height: 25px;
+	max-height: 25px;
+}</string>
+        </property>
+        <property name="text">
+         <string>联系电话</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_PhoneNum_OP"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,50 @@
+[
+    {
+        "ID": "001",
+        "address": "3F203诊室",
+        "appointments": [
+            {
+                "age": 15,
+                "date": "",
+                "gender": "男",
+                "name": "张三",
+                "phoneNumber": "12345678901",
+                "time": "07:00-09:00"
+            },
+            {
+                "age": 15,
+                "date": "",
+                "gender": "女",
+                "name": "李四",
+                "phoneNumber": "12345678902",
+                "time": "07:00-09:00"
+            }
+        ],
+        "capacity": 20,
+        "date": "2024/09/09",
+        "name": "儿科",
+        "number": "001",
+        "phoneNumber": "5787990",
+        "time": "07:00-09:00"
+    },
+    {
+        "ID": "001",
+        "address": "3F204诊室",
+        "appointments": [
+            {
+                "age": 5,
+                "date": "",
+                "gender": "男",
+                "name": "赵六",
+                "phoneNumber": "12345678902",
+                "time": "07:00-09:00"
+            }
+        ],
+        "capacity": 20,
+        "date": "2024/09/09",
+        "name": "内科",
+        "number": "002",
+        "phoneNumber": "5787991",
+        "time": "07:00-09:00"
+    }
+]
